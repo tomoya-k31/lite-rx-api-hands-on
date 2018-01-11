@@ -58,7 +58,7 @@ public class Part03StepVerifierTest {
 
 	@Test
 	public void count() {
-		workshop.expect10Elements(Flux.interval(Duration.ofSeconds(1)).take(10));
+		workshop.expect10Elements(Flux.interval(Duration.ofMillis(10)).take(10));
 	}
 
 //========================================================================================
